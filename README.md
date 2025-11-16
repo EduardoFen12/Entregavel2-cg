@@ -21,3 +21,15 @@ O projeto utiliza bibliotecas comuns para gráficos e visão computacional, como
 * opencv-python (cv2) (Opcional: usado apenas para o arquivo de comparação conv_opencv_G2.py)
 
 > pip install numpy PyOpenGL glfw Pillow
+
+### Instruções de Execução
+1. Organização: Certifique-se de que todos os arquivos do repositório (main.py, Fragment_shader.glsl, vertex_shader.glsl, fps_counter.py e a imagem templo.jpg) estão no mesmo diretório.
+2. Execução: Execute o arquivo principal a partir do seu terminal:
+> python main.py
+
+## Descrição das Funcionalidades
+O projeto combina navegação 3D com a aplicação de filtros de imagem via Fragment Shader (convolução).
+
+### Funcionalidades de Processamento de Imagem
+
+### Controles de Navegação e Câmera
