@@ -52,3 +52,8 @@ O usuário pode interagir com o objeto 3D e a textura através dos seguintes com
 ### Aferição de Desempenho
 1. Contador de FPS: Exibe o Frame Rate atual na tela.
 2. Medição de Latência: Imprime no console o tempo de renderização da GPU sempre que um novo kernel é aplicado.
+
+## Melhorias Futuras (Roadmap)
+1. Adicionar mais opções de filtros (kernels), como Inversão de Cores, Vignette ou Bloom
+2. Melhoria na Exibição de FPS: Utilizar um método de renderização de texto mais eficiente, como o Freetype ou Text Rendering com Texturas, em vez de redesenhar vértices por caractere.
+3. Gerenciamento de Shaders: Implementar uma classe para compilação e gerenciamento de shaders para simplificar a adição de novos programas shader.
