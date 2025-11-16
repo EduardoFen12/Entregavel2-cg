@@ -1,4 +1,4 @@
-# Entregavel2-cg
+Ahh# Entregavel2-cg
 
 ## Integrantes: 
 * Eduardo Garcia Fensterseifer 
@@ -7,11 +7,13 @@
 
 
 ## Elevator Pitch:
-O Entregável 2 é uma aplicação de Computação Gráfica que demonstra o poder do processamento paralelo de imagens utilizando a pipeline programável da GPU (OpenGL/GLSL). Ele permite aplicar filtros de convolução 3x3 (como Blur, Sharpen, Emboss e Detecção de Bordas) em uma textura 3D em tempo real. O sistema é controlado pelo teclado e mouse, permitindo a navegação no espaço 3D (matrizes MVP) e a alternância instantânea entre diferentes kernels para uma visualização imediata e eficiente do efeito na imagem.
+(Convolução): O Entregável 2, Convolução, é uma aplicação de Computação Gráfica que demonstra o poder do processamento paralelo de imagens utilizando a pipeline programável da GPU (OpenGL/GLSL). Ele permite aplicar filtros de convolução 3x3 (como Blur, Sharpen, Emboss e Detecção de Bordas) em uma textura 3D em tempo real. O sistema é controlado pelo teclado, permitindo a alternância instantânea entre diferentes kernels para uma visualização imediata e eficiente do efeito na imagem.
+
+O Entregável 2, Manipulação de Câmera em 3D, é uma aplicação de Computação Gráfica que demonstra o poder do processamento paralelo de imagens utilizando a pipeline programável da GPU (OpenGL/GLSL). Um cubo 3D é controlado pelo teclado e mouse, permitindo a navegação no espaço 3D (matrizes MVP).
 
 
 ## Como Rodar o Projeto:
-Para executar a aplicação, você precisará de uma máquina com suporte a OpenGL 3.3+ e as seguintes dependências em Python.
+Para executar a aplicação, você precisará de uma máquina com suporte a OpenGL 3.3+ e as seguintes dependências em Python. Esses passos servem tanto para a atividade de Convolução, quanto para a de 3D.
 
 ### Requisitos
 O projeto utiliza bibliotecas comuns para gráficos e visão computacional, como:
