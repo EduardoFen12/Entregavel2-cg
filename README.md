@@ -31,6 +31,24 @@ O projeto utiliza bibliotecas comuns para gráficos e visão computacional, como
 ## Descrição das Funcionalidades
 O projeto combina navegação 3D com a aplicação de filtros de imagem via Fragment Shader (convolução).
 
-### Funcionalidades de Processamento de Imagem
+### Processamento de Imagem (Filtros GLSL)
+Os filtros de imagem são aplicados em tempo real no fragment shader, garantindo alto desempenho.
+1. Convolução 3x3: O shader utiliza uma matriz uniforme (kernel[9]) para aplicar diversos efeitos de filtro 3x3.
+  * Controle: Alternados pelas teclas numéricas 1 a 5.
+2. Modo Tons de Cinza (Gray Scale): Aplica a conversão de luminância padrão (Y = 0.299R + 0.587G + 0.114B) após a convolução.
+  * Controle: Ativado/desativado com o Botão Esquerdo do Mouse.
+3. Reset: O kernel é restaurado para a matriz Identidade, mostrando a imagem original.
+  * Controle: Tecla 0 ou Botão Direito do Mouse.
 
 ### Controles de Navegação e Câmera
+O usuário pode interagir com o objeto 3D e a textura através dos seguintes comandos de câmera:
+1. Movimento: Permite translação da câmera nos três eixos (X, Y e Z).
+  * Controle: W/S (Frente/Trás), A/D (Lado a Lado), SPACE/LEFT_SHIFT (Cima/Baixo).
+2. Rotação: Permite rotação da câmera nos eixos X e Y.
+  * Controle: Setas direcionais (UP/DOWN/LEFT/RIGHT).
+3. Reset de Posição: Restaura a câmera para a posição inicial (Z=5).
+  * Controle: Botão Direito do Mouse.
+
+### Aferição de Desempenho
+1. Contador de FPS: Exibe o Frame Rate atual na tela.
+2. Medição de Latência: Imprime no console o tempo de renderização da GPU sempre que um novo kernel é aplicado.
