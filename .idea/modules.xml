@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Computacao-Grafica/.idea/Computacao-Grafica.iml" filepath="$PROJECT_DIR$/../Computacao-Grafica/.idea/Computacao-Grafica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Entregavel2-cg.iml" filepath="$PROJECT_DIR$/.idea/Entregavel2-cg.iml" />
+    </modules>
+  </component>
+</project>
