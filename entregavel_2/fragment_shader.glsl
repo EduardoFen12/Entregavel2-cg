@@ -1,0 +1,32 @@
+#version 330 core
+
+uniform sampler2D uTexture;
+uniform float kernel[9];
+uniform bool grayMode;  // true: tons de cinza
+
+in vec2 vTexCord;
+out vec4 FragColor;
+
+void main()
+{
+    vec2 tex_offset = 1.0 / textureSize(uTexture, 0); // tamanho do pixel
+
+    vec3 result = vec3(0.0);
+
+    int index = 0;
+    for(int y = -1; y <= 1; y++) {
+        for(int x = -1; x <= 1; x++) {
+            vec2 offset = vec2(float(x), float(y)) * tex_offset;
+            vec3 sample = texture(uTexture, vTexCord + offset).rgb;
+            result += sample * kernel[index];
+            index++;
+        }
+    }
+
+    if (grayMode) {
+        float y = 0.299 * result.r + 0.587 * result.g + 0.114 * result.b;
+        result = vec3(y, y, y);
+    }
+
+    FragColor = vec4(result, 1.0);
+}
